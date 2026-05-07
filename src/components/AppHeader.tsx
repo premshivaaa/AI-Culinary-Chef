@@ -39,7 +39,7 @@ function subscribe(onStoreChange: () => void) {
 }
 
 export default function AppHeader() {
-  const theme = useSyncExternalStore(subscribe, getThemeSnapshot, () => "dark");
+  const theme = useSyncExternalStore<Theme>(subscribe, getThemeSnapshot, () => "dark");
 
   useEffect(() => {
     applyTheme(theme);
