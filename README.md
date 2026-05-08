@@ -18,12 +18,6 @@ Set these in **Vercel → Project → Settings → Environment Variables**:
 
 - **`GEMINI_API_KEY`** (required): Gemini API key used by serverless API routes
 
-Locally, copy `.env.example` to `.env.local` and fill in values:
-
-```bash
-copy .env.example .env.local
-```
-
 ### Local development
 
 Install deps and run the dev server:
